@@ -1,16 +1,14 @@
 {
   "name": "nock-vcr-recorder-mocha",
-  "version": "0.3.4",
+  "version": "0.3.2",
   "description": "Wrapper around nock-vcr-recorder to simplify creating vcr cassettes in mocha.",
   "main": "index.js",
   "scripts": {
-    "test": "rm -rf cassettes && node_modules/mocha/bin/mocha -r test/_helper.js test/*-test.js",
-    "coverage": "rm -rf cassettes && istanbul cover _mocha -- -r test/_helper.js test/*-test.js",
-    "postpublish": "greenkeeper-postpublish"
+    "test": "rm -rf cassettes && node_modules/mocha/bin/mocha -r test/_helper.js test/*-test.js "
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Huckleberry/nock-vcr-recorder-mocha.git"
+    "url": "https://github.com/poetic/nock-vcr-recorder-mocha.git"
   },
   "keywords": [
     "vcr",
@@ -23,19 +21,17 @@
   "author": "Jake Craige <jake@poeticsystems.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Huckleberry/nock-vcr-recorder-mocha/issues"
+    "url": "https://github.com/poetic/nock-vcr-recorder-mocha/issues"
   },
-  "homepage": "https://github.com/Huckleberry/nock-vcr-recorder-mocha",
+  "homepage": "https://github.com/poetic/nock-vcr-recorder-mocha",
   "dependencies": {
-    "bluebird": "^3.4.1",
-    "@albanv/nock-vcr-recorder": "^0.1.4"
+    "nock-vcr-recorder": "^0.1.5",
+    "rsvp": "^3.3.3",
+    "slug": "^0.9.1"
   },
   "devDependencies": {
     "express": "^4.14.0",
-    "greenkeeper-postpublish": "^1.0.0",
-    "istanbul": "^0.4.4",
-    "mocha": "^3.0.1",
-    "request": "^2.73.0",
-    "request-promise": "^4.0.1"
+    "mocha": "^3.2.0",
+    "request": "^2.79.0"
   }
 }
